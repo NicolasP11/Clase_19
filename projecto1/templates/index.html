@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera paginovich</title>
+</head>
+<body>
+
+    {% for nota in notas %}
+
+        {% if nota < 6 %}
+
+            <p style="color: red;">Tu nota es: {{nota}}</p>
+
+        {% else %}
+
+            <p style="color: blue">Tu nota es: {{nota}}</p>
+
+        {% endif %}
+
+    {% endfor %}
+    <p>Hola {{name}} {{surname}} , esta es mi primer plantilla</p>
+</body>
+</html>
